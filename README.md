@@ -71,7 +71,7 @@ It also supports slash commands - you can use "/refresh" to manually update and 
 - Using /refresh command to manually check the list:   
 ![image](https://i.imgur.com/5fQT0z4.png)   
 
-## Usage Guide
+## Installation Guide
 - After cloning the repository locally, please install the modules via `requirements.txt` first.
     - Install using pip
         ```console
