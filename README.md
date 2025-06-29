@@ -4,13 +4,13 @@
 他也支援斜線指令，你可以使用 "/refresh" 手動更新並檢查全成就列表。
 
 - 初始化完成範例：
-![image](https://i.imgur.com/vfYhIwq.png)
+    - ![image](https://i.imgur.com/vfYhIwq.png)
 
 - 從本地資料庫（json）讀入並檢查到有遊戲達成全成就：
-![image](https://i.imgur.com/1ykobMz.png)
+    - ![image](https://i.imgur.com/1ykobMz.png)
 
 - 使用 /refresh 指令來手動檢查列表：
-![image](https://i.imgur.com/5fQT0z4.png)
+    - ![image](https://i.imgur.com/5fQT0z4.png)
 
 ## 使用指南
 - 將倉庫克隆至本地後，請先透過 `requirements.txt` 來安裝模組。
@@ -63,13 +63,13 @@ You just need to register a Discord Bot service and apply for a Steam API Key. T
 It also supports slash commands - you can use "/refresh" to manually update and check the perfect achievements list.
 
 - Initialization completed example:
-![image](https://i.imgur.com/vfYhIwq.png)
+    - ![image](https://i.imgur.com/vfYhIwq.png)
 
 - Loading from local database (json) and detecting games that achieved perfect achievements:
-![image](https://i.imgur.com/1ykobMz.png)
+    - ![image](https://i.imgur.com/1ykobMz.png)
 
 - Using /refresh command to manually check the list:
-![image](https://i.imgur.com/5fQT0z4.png)
+    - ![image](https://i.imgur.com/5fQT0z4.png)
 
 ## Usage Guide
 - After cloning the repository locally, please install the modules via `requirements.txt` first.
