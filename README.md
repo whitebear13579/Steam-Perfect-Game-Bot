@@ -1,16 +1,16 @@
 # [繁體中文] Steam 全成就遊戲清單查詢器
-如果你的 Steam 收藏庫中有專門將全成就的遊戲分類，那麼，這個機器人可以幫你好好維護你的收藏夾。
-你只需要註冊一個 Discord Bot 服務，申請 Steam API Key，這個機器人就會在你設定好的時間裡定時向 Steam API 擷取全成就列表，並通指你哪些遊戲已經不再是全成就，或是哪些遊戲已達成全成就。
-他也支援斜線指令，你可以使用 "/refresh" 手動更新並檢查全成就列表。
+如果你的 Steam 收藏庫中有專門將全成就的遊戲分類，那麼，這個機器人可以幫你好好維護你的收藏夾。   
+你只需要註冊一個 Discord Bot 服務，申請 Steam API Key，這個機器人就會在你設定好的時間裡定時向 Steam API 擷取全成就列表，並通指你哪些遊戲已經不再是全成就，或是哪些遊戲已達成全成就。   
+他也支援斜線指令，你可以使用 "/refresh" 手動更新並檢查全成就列表。   
 
-- 初始化完成範例：
-    - ![image](https://i.imgur.com/vfYhIwq.png)
+- 初始化完成範例：  
+![image](https://i.imgur.com/vfYhIwq.png)   
 
-- 從本地資料庫（json）讀入並檢查到有遊戲達成全成就：
-    - ![image](https://i.imgur.com/1ykobMz.png)
+- 從本地資料庫（json）讀入並檢查到有遊戲達成全成就：   
+![image](https://i.imgur.com/1ykobMz.png)   
 
-- 使用 /refresh 指令來手動檢查列表：
-    - ![image](https://i.imgur.com/5fQT0z4.png)
+- 使用 /refresh 指令來手動檢查列表：   
+![image](https://i.imgur.com/5fQT0z4.png)   
 
 ## 使用指南
 - 將倉庫克隆至本地後，請先透過 `requirements.txt` 來安裝模組。
@@ -48,28 +48,28 @@ Err! > Error occurred while loading query data from database
 (may be the json file is broken? try to delete it and the program will automactically create a new one.)
 not writable
 ```
-- Solution：請先嘗試變更 `..db/*` 的權限。
+- Solution：請先嘗試變更 `..db/*` 的權限。 
 
 ## 遇到問題了嗎？
-如果你有任何的意見，或是遇到任何的問題，歡迎你創建一個 issue。
-我也歡迎你使用 Discord 來私訊我取得協助：whitebear13579
+如果你有任何的意見，或是遇到任何的問題，歡迎你創建一個 issue。   
+我也歡迎你使用 Discord 來私訊我取得協助：whitebear13579   
 
 ---
 
 # [English] Steam Perfect Games Checking Bot
 
-If you have a dedicated category in your Steam library for games with perfect achievements, this bot can help you maintain your collection effectively.
-You just need to register a Discord Bot service and apply for a Steam API Key. This bot will periodically fetch the perfect achievements list from Steam API at your configured intervals and notify you which games are no longer perfect achievements or which games have achieved perfect achievements.
-It also supports slash commands - you can use "/refresh" to manually update and check the perfect achievements list.
+If you have a dedicated category in your Steam library for games with perfect achievements, this bot can help you maintain your collection effectively.   
+You just need to register a Discord Bot service and apply for a Steam API Key. This bot will periodically fetch the perfect achievements list from Steam API at your configured intervals and notify you which games are no longer perfect achievements or which games have achieved perfect achievements.   
+It also supports slash commands - you can use "/refresh" to manually update and check the perfect achievements list.   
 
-- Initialization completed example:
-    - ![image](https://i.imgur.com/vfYhIwq.png)
+- Initialization completed example:   
+![image](https://i.imgur.com/vfYhIwq.png)   
 
-- Loading from local database (json) and detecting games that achieved perfect achievements:
-    - ![image](https://i.imgur.com/1ykobMz.png)
+- Loading from local database (json) and detecting games that achieved perfect achievements:   
+- ![image](https://i.imgur.com/1ykobMz.png)   
 
-- Using /refresh command to manually check the list:
-    - ![image](https://i.imgur.com/5fQT0z4.png)
+- Using /refresh command to manually check the list:   
+- ![image](https://i.imgur.com/5fQT0z4.png)   
 
 ## Usage Guide
 - After cloning the repository locally, please install the modules via `requirements.txt` first.
@@ -109,5 +109,5 @@ not writable
 - Solution: Please try changing the permissions of `../db/*` first.
 
 ## Support
-If you encounter any issues or have suggestions, please create an issue on GitHub.
-You are also welcome to contact me via Discord for assistance: whitebear13579
+If you encounter any issues or have suggestions, please create an issue on GitHub.   
+You are also welcome to contact me via Discord for assistance: whitebear13579   
