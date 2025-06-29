@@ -1,11 +1,5 @@
 # Steam Perfect Games Checking Bot
 
-你正在尋找繁體中文的 README.md 嗎？[請點我來查看](https://github.com/whitebear13579/Steam-Perfect-Game-Bot/tree/main/README/zh-tw.md)   
-   
-你正在寻找简体中文的 README.md 吗？[请点我来查看](https://github.com/whitebear13579/Steam-Perfect-Game-Bot/tree/main/README/zh-cn.md)   
-   
-日本語の README.md をお探しですか？[こちらをクリックしてご覧ください](https://github.com/whitebear13579/Steam-Perfect-Game-Bot/tree/main/README/ja.md)   
-
 If you have a dedicated category in your Steam library for games with perfect achievements, this bot can help you maintain your collection effectively.   
 You just need to register a Discord Bot service and apply for a Steam API Key. This bot will periodically fetch the perfect achievements list from Steam API at your configured intervals and notify you which games are no longer perfect achievements or which games have achieved perfect achievements.   
 It also supports slash commands - you can use "/refresh" to manually update and check the perfect achievements list.   
