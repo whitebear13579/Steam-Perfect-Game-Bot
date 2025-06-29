@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 import time
 from configparser import ConfigParser
 import logging
