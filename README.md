@@ -66,10 +66,10 @@ It also supports slash commands - you can use "/refresh" to manually update and 
 ![image](https://i.imgur.com/vfYhIwq.png)   
 
 - Loading from local database (json) and detecting games that achieved perfect achievements:   
-- ![image](https://i.imgur.com/1ykobMz.png)   
+![image](https://i.imgur.com/1ykobMz.png)   
 
 - Using /refresh command to manually check the list:   
-- ![image](https://i.imgur.com/5fQT0z4.png)   
+![image](https://i.imgur.com/5fQT0z4.png)   
 
 ## Usage Guide
 - After cloning the repository locally, please install the modules via `requirements.txt` first.
