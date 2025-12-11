@@ -1,1 +1,3 @@
 config_private.ini
+log/*
+main_old.py
