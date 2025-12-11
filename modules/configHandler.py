@@ -15,6 +15,7 @@ class Config:
     debug_mode: bool
 
 def loadConfig(configPath: str = 'config.ini', logger: Optional[logging.Logger] = None) -> Optional[Config]:
+    
     """
     從設定檔（config.ini）載入設定
     
@@ -25,6 +26,7 @@ def loadConfig(configPath: str = 'config.ini', logger: Optional[logging.Logger] 
     Returns:
         Config object, None if loading fails
     """
+
     conf = ConfigParser()
     try:
         conf.read(configPath, encoding='utf-8')

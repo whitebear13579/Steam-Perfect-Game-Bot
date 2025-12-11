@@ -6,6 +6,7 @@ from modules.logHandler import loggingHandler as log
 DB_PATH = os.path.join('db', 'lastQuery.json')
 
 def loadLastQuery(debugMode: bool = False) -> Optional[List[dict]]:
+
     """
     從資料庫載入上次查詢結果
     
@@ -15,6 +16,7 @@ def loadLastQuery(debugMode: bool = False) -> Optional[List[dict]]:
     Returns:
         list of games from last query, None if failed
     """
+
     try:
         if not os.path.exists(DB_PATH):
             log(3, "\"lastQuery.json\" not existed.")
@@ -40,6 +42,7 @@ def loadLastQuery(debugMode: bool = False) -> Optional[List[dict]]:
         return None
 
 def saveLastQuery(gamesList: List[dict], debugMode: bool = False) -> bool:
+
     """
     儲存查詢結果到資料庫
     
@@ -50,6 +53,7 @@ def saveLastQuery(gamesList: List[dict], debugMode: bool = False) -> bool:
     Returns:
         bool, whether saving was successful
     """
+
     try:
         with open(DB_PATH, 'w', encoding='utf-8') as file:
             json.dump(gamesList, file, ensure_ascii=False, indent=2)
@@ -61,6 +65,7 @@ def saveLastQuery(gamesList: List[dict], debugMode: bool = False) -> bool:
         return False
 
 def compareGameLists(lastPrefectGames: List[dict], nowPrefectGames: List[dict], debugMode: bool = False) -> tuple:
+
     """
     比較新舊全成就遊戲列表的差異
     
@@ -73,6 +78,7 @@ def compareGameLists(lastPrefectGames: List[dict], nowPrefectGames: List[dict], 
         a tuple with two lists.
         (noLongerPrefect, newPrefectGame) - list of games no longer prefect, list of newly prefect games
     """
+    
     noLongerPrefect = []
     newPrefectGame = []
     
