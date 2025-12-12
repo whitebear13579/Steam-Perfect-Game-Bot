@@ -1,0 +1,14 @@
+{
+    "General": {
+        "STEAM_API_KEY": "",
+        "STEAMID64": "",
+        "BOARDCAST_CHANNEL": "",
+        "BOT_TOKEN": "",
+        "UPDATE_FREQ": 3600,
+        "MESSAGE_EVERY_LOOP": true
+    },
+    "Debug": {
+        "DEBUG_MODE": false,
+        "BOT_VERSION": "v2.0.0"
+    }
+}
