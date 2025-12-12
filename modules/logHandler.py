@@ -7,8 +7,11 @@ import os
 istime = time.localtime()
 isname = time.strftime("%Y-%m-%d %I：%M：%S：%p", istime)
 
+log_base_path = os.environ.get('STEAM_BOT_LOG_PATH', './log')
+os.makedirs(log_base_path, exist_ok=True)
+
 rootLogger = logging.getLogger()
-handler = logging.FileHandler(f'./log/Log-{isname}.log', 'w', 'utf-8')
+handler = logging.FileHandler(os.path.join(log_base_path, f'Log-{isname}.log'), 'w', 'utf-8')
 rootLogger.addHandler(handler)
 
 def loggingHandler(level: int, message: str, debuggingMode: Optional[bool] = False, errCode: Optional[str] = None):
@@ -49,12 +52,14 @@ def getRootLogger():
     return rootLogger
 
 def initFolders():
-    if not os.path.exists('./log'):
-        os.makedirs('./log')
+    db_base_path = os.environ.get('STEAM_BOT_DB_PATH', './db')
+    
+    if not os.path.exists(log_base_path):
+        os.makedirs(log_base_path)
         loggingHandler(2, "Log folder not existed, create a new one.")
 
-    if not os.path.exists('./db'):
-        os.makedirs('./db')
+    if not os.path.exists(db_base_path):
+        os.makedirs(db_base_path)
         loggingHandler(2, "DB folder not existed, create a new one.")
 
     loggingHandler(2, "Folder integrity check completed.")
