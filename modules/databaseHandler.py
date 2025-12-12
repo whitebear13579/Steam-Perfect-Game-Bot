@@ -3,7 +3,8 @@ import os
 from typing import Optional, List
 from modules.logHandler import loggingHandler as log
 
-DB_PATH = os.path.join('db', 'lastQuery.json')
+DB_BASE_PATH = os.environ.get('STEAM_BOT_DB_PATH', 'db')
+DB_PATH = os.path.join(DB_BASE_PATH, 'lastQuery.json')
 
 def loadLastQuery(debugMode: bool = False) -> Optional[List[dict]]:
 
@@ -55,6 +56,7 @@ def saveLastQuery(gamesList: List[dict], debugMode: bool = False) -> bool:
     """
 
     try:
+        os.makedirs(DB_BASE_PATH, exist_ok=True)
         with open(DB_PATH, 'w', encoding='utf-8') as file:
             json.dump(gamesList, file, ensure_ascii=False, indent=2)
         log(2, "The Database has been updated.")
